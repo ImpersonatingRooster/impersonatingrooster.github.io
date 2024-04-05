@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Home - Proxy Productions</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../assets/stunnylogo.ico">
+        <meta name=“viewport” content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="aboutMe.html">ABOUT ME</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="siteSettings.html">THEME</a>
+            </nav>
+        </header>
+        
+        <div class="formpage">
+            <div id="heading"> 
+            <h1 class="pagetitle">Contact me</h1>
+            <h2 class="pageSubtitle">Please fill in this form to get in touch!</h2>
+            </div> 
+            <div id="form">
+                <form action="" id="inputs">
+                    <label class="text" for="fname" id="formE">First Name:</label>
+                    <input type="text" id="fname">
+                    
+                    <br>
+
+                    <label class="text" for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="fname">
+
+                    <br>
+
+                    <label class="text" for="ph">Phone # (e.g: 1112223333):</label>
+                    <input type="tel" name="ph" id="ph" pattern="[0-9]{10}" title="No spaces between the digits please! Must be a valid phone number">
+    
+                    <br>
+
+                    <label class=text for="email">Email Adress:</label>
+                    <input type="email" name="email" id="email">
+                    
+                    <br>
+
+                    <label for="dob" class="text">Date of birth:</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <br>
+
+                    <label class="text" for="pet">You are more of a:</label>
+                    <select name="pet" id="pet" name="pet">
+                        <option value="blank"></option>
+                        <option value="dog">Dog person</option>
+                        <option value="cat">Cat person</option>
+                        <option value="fish">Fish person</option>
+                        <option value="bird">Bird person</option>
+                        <option value="invisible" class="text">Ghost person</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label class="text" for="reason">Reason for contact:</label>
+                    <br>
+                    <textarea name="reason" id="reason" cols="20%" rows="20%"></textarea>
+
+                    <br>
+
+                    <label class="text" for="botcheck">To ensure you are human, please enter a postal code (e.g.: X0Y 1Z2):</label>
+                    <br>
+                    <input type="text" id="botcheck" pattern="^[A-Za-z]\d[A-Za-z]? \d[A-Za-z]\d$">
+                    <br>
+
+                    <button type="submit">Submit</button>
+                    <p id="errorBox"></p>
+                    <p class="disclaimer">*information is not being stored and is for assignment purposes only</p>
+                
+                </form>
+            </div>
+        </div>
+        <script src="./formScript.js"></script>
+        <script src="eventscript.js"></script> 
+    </body>
+</html>
